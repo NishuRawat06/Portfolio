@@ -16,11 +16,11 @@ export default function TechStack(){
     return(
         <div className="min-h-screen flex items-center flex-col justify-start gap-6 px-6 md:px-20 mt-5 md:mt-10">
             <div className="w-[255px] md:w-[335px] font-bold text-4xl">My Tech Stack</div>
-            <div className="w-[350px] md:w-[550px] text-start font-normal md:text-2xl">Technologies i've been working with recently</div>
+            <div className="w-[300px] md:w-[550px] text-center font-normal md:text-2xl">Technologies i've been working with recently</div>
             <div className="grid grid-row-6 md:grid-rows-4 lg:grid-rows-2 grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10 md:gap-20 mt-10 md:mt-16 px-6 md:">
                 {
                  techStacks.map((techstack)=>(
-                 <div key={techstack.id}>
+                 <div key={techstack.id} className="bg-[#252446] h-[120px] w-[110px] transform transition duration-500 hover:scale-110">
                    <img src={techstack.img} className="w-[120px] h-[80px]"/>
                    <div className="text-center font-medium">{techstack.name}</div>
                  </div>
