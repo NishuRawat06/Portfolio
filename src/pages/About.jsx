@@ -10,7 +10,12 @@ export default function About() {
             building efficient and scalable applications while continuously
             learning new technologies. I'm always eager to take on new
             challenges, collaborate with others, and contribute to exciting tech
-            solutions.<br/><span className="text-2xl"> Let's connect and create something amazing!</span>
+            solutions.
+            <br />
+            <span className="text-2xl">
+              {" "}
+              Let's connect and create something amazing!
+            </span>
           </div>
         </div>
         <div>
@@ -25,23 +30,40 @@ export default function About() {
           <div className="text-orange-400 text-2xl">Education:</div>
           <ul>
             <li>10 | CBSE | 72%</li>
-            <li>12 | CBSE  | 87%</li>
-            <li>BCA at DSEU | 2023-2026 | 8.4cgpa</li>
+            <li>12 | CBSE | 87%</li>
+            <li>BCA at DSEU | 2023-2026 | 8.4 cgpa</li>
           </ul>
         </div>
         <div className="w-[310px] md:w-[280px] xl:w-[320px] bg-[#252446] pl-5 transform transition duration-500 hover:scale-110">
           <div className="text-orange-400 text-2xl">social profiles:</div>
           <ul>
-            <li>Github</li>
-            <li>Linkedin</li>
-            <li>Twitter/X</li>
+            <li>
+              <a
+                href="https://github.com/NishuRawat06"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Github
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/nishu-rawat-7a04622a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Linkedin
+              </a>
+            </li>
           </ul>
         </div>
         <div className="w-[310px] md:w-[280px] xl:w-[320px] bg-[#252446] pl-5 transform transition duration-500 hover:scale-110">
           <div className="text-orange-400 text-2xl">Contact Me:</div>
           <ul>
             <li>+91 98113342xx</li>
-            <li>rawatnishu378@gmail.com</li>
+            <li><a href="mailto:rawatnishu378@gmail.com" className="hover:underline">rawatnishu378@gmail.com</a></li>
           </ul>
         </div>
       </div>

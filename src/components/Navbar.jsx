@@ -1,41 +1,42 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from "react";
 export default function Navbar() {
-    const [isopen, setIsOpen] = useState(false); 
-  
-    const iconclick = () => {
-      setIsOpen(!isopen); 
-    };
+  const paths = ["/", "/about", "/techstack", "/projects", "/contact"];
+  const location=useLocation();
+  const [isopen, setIsOpen] = useState(false);
+  const iconclick = () => {
+    setIsOpen(!isopen);
+  };
+
   return (
     <div className="h-20 w-full flex px-10 md:px-32 pt-4 justify-between items-center border-b-2 bg-[#212032]">
-      <div className="text-[#f86546] font-bold text-2xl">PORTFOLIO</div>
+      <div className="text-[#f49434] font-bold text-2xl">PORTFOLIO</div>
       <div className="flex justify-items-start">
         <div className=" hidden md:flex justify-around items-center w-[609px] font-medium">
-          <div>
-            <Link to="/" className="hover:underline">
-              Home
-            </Link>
-          </div>
-          <div>
-            <Link to="/about" className="hover:underline">
-              About
-            </Link>
-          </div>
-          <div>
-            <Link to="/techstack" className="hover:underline">
-              Tech stack
-            </Link>
-          </div>
-          <div>
-            <Link to="/projects" className="hover:underline">
-              projects
-            </Link>
-          </div>
-          <div>
-            <Link to="/contact" className="hover:underline">
-              Contact
-            </Link>
-          </div>
+          {paths.map((path, index) => {
+            const labels = [
+              "Home",
+              "About",
+              "Techstack",
+              "Projects",
+              "Contact",
+            ];
+            return (
+              <div key={path}>
+                <Link
+                  to={path}
+                  className={`hover:underline ${
+                    location.pathname === path
+                      ? "text-[#f49434] font-bold"
+                      : "text-white"
+                  }`}
+                >
+                  {labels[index]}
+                </Link>
+              </div>
+            );
+          })}
         </div>
         <div className="text-3xl block md:hidden">
           <i

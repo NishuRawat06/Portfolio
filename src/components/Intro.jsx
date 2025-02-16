@@ -1,44 +1,21 @@
 export default function Intro() {
   return (
-    <div className="min-h-screen px-20 flex flex-col justify-evenly">
-      <div className="flex justify-around items-center">
-        <div className="w-[800px]">
-          <span className="text-3xl">Hi</span>
+      <div className=" md:flex justify-around items-center px-4 md:px-32">
+        <div className="w-[400] md:w-[800px] text-center md:text-start">
+          <span className="text-lg md:text-3xl">Hi</span>
           <br />
-          <span className="font-bold text-4xl">I am Developer</span>
+          <span className="font-bold text-xl md:text-4xl">I am an aspiring Software Developer</span>
           <br />
-          <span className="text-3xl">I Make The Complex simple.</span>
+          <span className=" w-[100px] md:w-[222px] text-lg md:text-3xl">I Simplify The Complex.</span>
+          <br/>
+          <span> </span>
         </div>
-        <div className="w-[200px] h-[200px] bg-amber-300 rounded-[50%]"></div>
-      </div>
-      <div className="flex justify-around">
-        <div className="w-[280px] border-r-2">
-          <div className="font-bold text-lg"> Email</div>
-          <br />
-          <div>rawatnishu378@gmail.com</div>
-        </div>
-        <div className="w-[280px] border-r-2">
-          <div className="font-bold text-lg">Phone</div>
-          <br />
-          <div>+91 98113342xx</div>
-        </div>
-        <div className="w-[280px]">
-          <div className="font-bold text-lg">Location</div>
-          <br />
-          <div>Delhi India</div>
+        <div className="w-[150px] md:w-[250px] h-[150px] md:h-[250px] mt-10 md:mt-0 mx-auto">
+          <img
+            src="/public/picture2.jpeg"
+            className="rounded-[50%] border-orange-400 border-4"
+          />
         </div>
       </div>
-      <div className="flex justify-center items-center gap-20 text-4xl text-slate-700 ">
-        <div>
-          <i className="fa-brands fa-github hover:cursor-pointer"></i>
-        </div>
-        <div>
-          <i className="fa-brands fa-square-twitter hover: cursor-pointer"></i>
-        </div>
-        <div>
-          <i className="fa-brands fa-linkedin hover:cursor-pointer"></i>
-        </div>
-      </div>
-    </div>
   );
 }
