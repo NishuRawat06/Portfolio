@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <div className="w-full h-[80px]  md:flex items-center px-20 md:px-32 justify-between border-t-2 border-white space-y-5 md:space-y-0">
+    <div className="w-full h-auto md:h-[80px]  md:flex flex-col md:flex-row items-center px-[87px] md:px-32 justify-between border-t-2 border-white space-y-5 md:space-y-0">
       <div className="w-[220px] md:w-[450px] text-center md:text-start text-m md:text-xl">
         Designed and built by <span className="text-orange-400">Nishu</span>{" "}
         with <span className="text-orange-400">Love</span>
       </div>
-      <div className="w-[220px] md:w-[600px] md:flex justify-between items-center text-center md: space-y-5 md:space-y-0">
+      <div className="w-[220px] md:w-[600px] md:flex flex-col md:flex-row justify-center md:justify-between items-center text-center md: space-y-5 md:space-y-0">
         <div>
-          <a href="mailto:rawatnishu378@gmail.com" className="text-m md:text-xl mr-12">rawatnishu378@gmail.com</a>
+          <a href="mailto:rawatnishu378@gmail.com" className="text-m md:text-xl mr-0 md:mr-12">rawatnishu378@gmail.com</a>
         </div>
         <div className="text-m md:text-xl">Delhi India</div>
         <div className="w-[150px] flex justify-between gap-5 text-4xl text-slate-700 mx-auto">
