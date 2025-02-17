@@ -4,7 +4,7 @@ export default function Intro() {
         <div className="w-[400] md:w-[800px] text-center md:text-start">
           <span className="text-lg md:text-3xl">Hi</span>
           <br />
-          <span className="font-bold text-xl md:text-4xl">I am an aspiring Software Developer</span>
+          <span className="font-bold text-xl md:text-4xl">I am an aspiring<br/> Software Developer</span>
           <br />
           <span className=" w-[100px] md:w-[222px] text-lg md:text-3xl">I Simplify The Complex.</span>
           <br/>
