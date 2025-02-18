@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="h-20 w-full flex px-10 md:px-32 pt-4 justify-between items-center border-b-2 bg-[#212032]">
+    <div className="h-20 w-full flex px-10 md:px-32 pt-4 justify-between md:justify-center lg:justify-between items-center border-b-2 bg-[#212032]">
       <div className="text-[#f49434] font-bold text-2xl">PORTFOLIO</div>
       <div className="flex justify-items-start">
         <div className=" hidden md:flex justify-around items-center w-[609px] font-medium">

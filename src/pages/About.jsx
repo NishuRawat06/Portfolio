@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <div className="px-10 sm:px:20 md:px-32 mt-10 sm:mt-28 flex flex-col gap-16">
-      <div className="text-center sm:text-start sm:flex justify-between ">
-        <div className="w-[300px] sm:w-[700px] flex flex-col gap-10">
+    <div className="px-10 sm:px-20 md:px-32 mt-10 sm:mt-28 flex flex-col gap-16">
+      <div className=" w-full text-center sm:text-start sm:flex justify-between items-center ">
+        <div className="w-[295px] md:w-[600px] flex flex-col gap-10 mx-auto sm:mx-0">
           <div className="text-3xl font-bold">Hello!</div>
           <div className="text-lg ">
             I am Nishu Rawat ,a passionate computer science student with a
@@ -18,24 +18,24 @@ export default function About() {
             </span>
           </div>
         </div>
-        <div>
+        <div className="flex justify-center items-center mt-5 md:mt-0">
           <img
             src="public/girl-programmer.webp"
-            className="rounded-[50%] opacity-90 pl-5 mt-5 sm:mt-0"
+            className="rounded-[50%] opacity-90 pl-5 mt-5 sm:mt-0 max-w-[250px] sm:max-w-[300px] "
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-col-1 gap-5 sm:">
-        <div className="w-[310px] md:w-[280px] xl:w-[320px] h-[130px] bg-[#252446] pl-5 transform transition duration-500 hover:scale-110">
-          <div className="text-orange-400 text-2xl">Education:</div>
-          <ul>
+      <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-3 md:grid-row-1 gap-5 sm:">
+        <div className="w-full bg-[#252446] p-5 transform transition duration-500 hover:scale-110">
+          <div className="text-orange-400 text-2xl mb-2">Education:</div>
+          <ul className="text-base">
             <li>10 | CBSE | 72%</li>
             <li>12 | CBSE | 87%</li>
             <li>BCA at DSEU | 2023-2026 | 8.4 cgpa</li>
           </ul>
         </div>
-        <div className="w-[310px] md:w-[280px] xl:w-[320px] bg-[#252446] pl-5 transform transition duration-500 hover:scale-110">
-          <div className="text-orange-400 text-2xl">social profiles:</div>
+        <div className="w-full bg-[#252446] p-5 transform transition duration-500 hover:scale-110">
+          <div className="text-orange-400 text-2xl mb-2">social profiles:</div>
           <ul>
             <li>
               <a
@@ -59,8 +59,8 @@ export default function About() {
             </li>
           </ul>
         </div>
-        <div className="w-[310px] md:w-[280px] xl:w-[320px] bg-[#252446] pl-5 transform transition duration-500 hover:scale-110">
-          <div className="text-orange-400 text-2xl">Contact Me:</div>
+        <div className="w-full bg-[#252446] p-5 transform transition duration-500 hover:scale-110">
+          <div className="text-orange-400 text-2xl mb-2">Contact Me:</div>
           <ul>
             <li>+91 98113342xx</li>
             <li><a href="mailto:rawatnishu378@gmail.com" className="hover:underline">rawatnishu378@gmail.com</a></li>
