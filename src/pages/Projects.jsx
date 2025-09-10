@@ -1,40 +1,34 @@
 export default function Projects() {
   const works = [
-    {
+     {
       id: 1,
+      img: "public/doctor.png",
+      name: "prescripto",
+      desc: "prescripto is a smart and easy to use doctor appointment booking app",
+      link: "https://github.com/NishuRawat06/prescripto",
+    },
+    {
+      id: 2,
       img: "public/tic-tac-toe.png",
       name: "Tic-Tac-Toe",
       desc: " tic-tac-toe project using html,css and javascript",
       link: "https://github.com/NishuRawat06/Tic-Tac-Toe",
     },
     {
-      id: 2,
+      id: 3,
       img: "public/rock-paper-scissors.jpg",
       name: "Stone-Paper-Scissor",
       desc: "stone-paper-scissor project using html,css and javascript",
       link: "https://github.com/NishuRawat06/stone-paper-scissor",
     },
     {
-      id: 3,
-      img: "public/ecommerce.png",
-      name: "E-commerce website",
-      desc: "e-commerce project using tailwind and react",
-      link: "https://github.com/NishuRawat06/e-commerce-website",
-    },
-    {
       id: 4,
-      img: "public/Bmi.jpg",
-      name: "Bmi calculator",
-      desc: "bmi calculator project using html,css and javascript",
-      link: "https://github.com/NishuRawat06/bmi",
-    },
-    {
-      id: 5,
       img: "public/Responsive webpage.webp",
       name: "Responsive webpage",
       desc: "responsive webpage using tailwind and react",
       link: "https://github.com/NishuRawat06/Responsive-webpage",
     },
+    
   ];
   return (
     <div className="flex flex-col justify-center items-center gap-5 mt-10">
