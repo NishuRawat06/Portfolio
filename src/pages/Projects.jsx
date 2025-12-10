@@ -19,7 +19,7 @@ export default function Projects() {
       img: "public/rock-paper-scissors.jpg",
       name: "Stone-Paper-Scissor",
       desc: "stone-paper-scissor project using html,css and javascript",
-      link: "https://github.com/NishuRawat06/stone-paper-scissor",
+      link: "https://github.com/NishuRawat06/stone-paper-scissor-game",
     },
     {
       id: 4,
