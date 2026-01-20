@@ -2,31 +2,32 @@ export default function Projects() {
   const works = [
      {
       id: 1,
-      img: "public/doctor.png",
+      img: "/doctor.png",
       name: "prescripto",
       desc: "prescripto is a smart and easy to use doctor appointment booking app",
       link: "https://github.com/NishuRawat06/prescripto",
     },
     {
       id: 2,
-      img: "public/tic-tac-toe.png",
-      name: "Tic-Tac-Toe",
-      desc: " tic-tac-toe project using html,css and javascript",
+      img: "/article.webp",
+      name: "ArticleX",
+      desc: " article app using MERN stack",
+      Live:"https://articlex123.netlify.app",
       link: "https://github.com/NishuRawat06/Tic-Tac-Toe",
     },
     {
       id: 3,
-      img: "public/rock-paper-scissors.jpg",
+      img: "/rock-paper-scissors.jpg",
       name: "Stone-Paper-Scissor",
       desc: "stone-paper-scissor project using html,css and javascript",
       link: "https://github.com/NishuRawat06/stone-paper-scissor-game",
     },
     {
       id: 4,
-      img: "public/Responsive webpage.webp",
-      name: "Responsive webpage",
-      desc: "responsive webpage using tailwind and react",
-      link: "https://github.com/NishuRawat06/Responsive-webpage",
+      img: "/tic-tac-toe.png",
+      name: "Tic-Tac-Toe",
+      desc: " tic-tac-toe project using html,css and javascript",
+      link: "https://github.com/NishuRawat06/Tic-Tac-Toe",
     },
     
   ];
@@ -48,7 +49,7 @@ export default function Projects() {
             <div className="text-lg pt-5 px-5">{work.desc}</div>
             <div className=" md:flex space-y-4 md: justify-evenly items-center pt-5 text-xl text-orange-400">
               <div className="hover:cursor-pointer">
-                <i className="fa-solid fa-link"></i>live preview
+                <i className="fa-solid fa-link"></i><a href={work.Live} target="_blank" rel="noopener noreferrer">live preview</a>
               </div>
               <div className="hover:cursor-pointer">
                 <i className="fa-brands fa-github"></i>

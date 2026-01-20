@@ -20,7 +20,7 @@ export default function About() {
         </div>
         <div className="flex justify-center items-center mt-5 md:mt-0">
           <img
-            src="public/girl-programmer.webp"
+            src="/girl-programmer.webp"
             className="rounded-[50%] opacity-90 pl-5 mt-5 sm:mt-0 max-w-[250px] sm:max-w-[300px] "
           />
         </div>
